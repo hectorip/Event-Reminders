@@ -9,4 +9,6 @@ Now you can visit `localhost:4000` from your browser.
 
 -----
 
-This will be the application to make event riminders and roles for organizing meetups.
+This will be the application to make event reminders and roles for organizing meetups.
+
+Developed to show show to integrate Phoenix(Elixir) and Polymer
