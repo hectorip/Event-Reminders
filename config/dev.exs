@@ -29,6 +29,6 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :event_reminders, EventReminders.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "hectorip",
+  password: "",
   database: "event_reminders_dev"
