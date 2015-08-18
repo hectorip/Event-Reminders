@@ -1,14 +1,14 @@
-defmodule EventReminders.Event do
+defmodule EventReminders.Role do
   use EventReminders.Web, :model
 
-  schema "events" do
+  schema "roles" do
+    field :name, :string
     field :description, :string
-    field :participants, :integer
 
     timestamps
   end
 
-  @required_fields ~w(description participants)
+  @required_fields ~w(name description)
   @optional_fields ~w()
 
   @doc """

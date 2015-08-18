@@ -17,6 +17,8 @@ defmodule EventReminders.Router do
 
     get "/", PageController, :index
     resources "/events", EventController
+    resources "/comments", CommentController
+    resources "/roles", RoleController
   end
 
   # Other scopes may use custom stacks.

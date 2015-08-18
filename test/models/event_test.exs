@@ -3,7 +3,7 @@ defmodule EventReminders.EventTest do
 
   alias EventReminders.Event
 
-  @valid_attrs %{description: "some content", name: "some content"}
+  @valid_attrs %{description: "some content", participants: 42}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do

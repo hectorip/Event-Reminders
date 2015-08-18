@@ -1,14 +1,14 @@
-defmodule EventReminders.Event do
+defmodule EventReminders.Comment do
   use EventReminders.Web, :model
 
-  schema "events" do
-    field :description, :string
-    field :participants, :integer
+  schema "comments" do
+    field :body, :string
+    field :author, :string
 
     timestamps
   end
 
-  @required_fields ~w(description participants)
+  @required_fields ~w(body author)
   @optional_fields ~w()
 
   @doc """

@@ -2,7 +2,7 @@ defmodule EventReminders.EventControllerTest do
   use EventReminders.ConnCase
 
   alias EventReminders.Event
-  @valid_attrs %{description: "some content", name: "some content"}
+  @valid_attrs %{description: "some content", participants: 42}
   @invalid_attrs %{}
 
   setup do

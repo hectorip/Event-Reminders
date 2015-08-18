@@ -3,13 +3,13 @@
 <ul>
 
   <li>
-    <strong>Name:</strong>
-    <%= @event.name %>
+    <strong>Description:</strong>
+    <%= @event.description %>
   </li>
 
   <li>
-    <strong>Description:</strong>
-    <%= @event.description %>
+    <strong>Participants:</strong>
+    <%= @event.participants %>
   </li>
 
 </ul>
