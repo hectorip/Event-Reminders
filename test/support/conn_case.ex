@@ -1,10 +1,10 @@
-defmodule EventReminders.ConnCase do
+defmodule PhoenixPolymer.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
 
   Such tests rely on `Phoenix.ConnTest` and also
-  imports other functionalities to make it easier
+  imports other functionality to make it easier
   to build and query models.
 
   Finally, if the test case interacts with the database,
@@ -20,22 +20,20 @@ defmodule EventReminders.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      # Alias the data repository and import query/model functions
-      alias EventReminders.Repo
+      alias PhoenixPolymer.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
 
-      # Import URL helpers from the router
-      import EventReminders.Router.Helpers
+      import PhoenixPolymer.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint EventReminders.Endpoint
+      @endpoint PhoenixPolymer.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(EventReminders.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(PhoenixPolymer.Repo, [])
     end
 
     :ok

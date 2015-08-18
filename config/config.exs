@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :event_reminders, EventReminders.Endpoint,
+config :phoenix_polymer, PhoenixPolymer.Endpoint,
   url: [host: "localhost"],
-  root: Path.expand("..", __DIR__),
-  secret_key_base: "X/dVarnbJIFsN5ki4WrMogWDk854IfgnXhwxbEoKGHBpMuMjk5XtY2z3M9bMYUbE",
-  debug_errors: false,
-  pubsub: [name: EventReminders.PubSub,
+  root: Path.dirname(__DIR__),
+  secret_key_base: "GT7w3KWarv91GFu80KNB6AlrMTfNV9GdgxHaLdRIwORKs6xYuM1hRMkAf1QrW7nN",
+  render_errors: [default_format: "html"],
+  pubsub: [name: PhoenixPolymer.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

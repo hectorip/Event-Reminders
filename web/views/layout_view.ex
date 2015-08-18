@@ -1,3 +1,3 @@
-defmodule EventReminders.LayoutView do
-  use EventReminders.Web, :view
+defmodule PhoenixPolymer.LayoutView do
+  use PhoenixPolymer.Web, :view
 end

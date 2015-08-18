@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :event_reminders, EventReminders.Endpoint,
+config :phoenix_polymer, PhoenixPolymer.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,10 +10,9 @@ config :event_reminders, EventReminders.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :event_reminders, EventReminders.Repo,
+config :phoenix_polymer, PhoenixPolymer.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "event_reminders_test",
-  size: 1,
-  max_overflow: false
+  database: "phoenix_polymer_test",
+  pool: Ecto.Adapters.SQL.Sandbox

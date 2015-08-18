@@ -1,8 +1,8 @@
-defmodule EventReminders.Mixfile do
+defmodule PhoenixPolymer.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :event_reminders,
+    [app: :phoenix_polymer,
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -16,8 +16,9 @@ defmodule EventReminders.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [mod: {EventReminders, []},
-     applications: [:phoenix, :cowboy, :logger, :ecto]]
+    [mod: {PhoenixPolymer, []},
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger,
+                    :phoenix_ecto, :postgrex]]
   end
 
   # Specifies which paths to compile per environment
@@ -28,11 +29,11 @@ defmodule EventReminders.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.11"},
-     {:phoenix_ecto, "~> 0.3"},
+    [{:phoenix, "~> 0.16"},
+     {:phoenix_ecto, "~> 0.9"},
      {:postgrex, ">= 0.0.0"},
-     {:phoenix_live_reload, "~> 0.3"},
-     {:phoenix_html, "~> 1.0"},
+     {:phoenix_html, "~> 2.0"},
+     {:phoenix_live_reload, "~> 0.6", only: :dev},
      {:cowboy, "~> 1.0"}]
   end
 end
