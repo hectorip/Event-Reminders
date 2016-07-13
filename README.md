@@ -16,3 +16,4 @@ require participation of several persons.
 -  Register a directory of people for an organization
 -  Assign roles to people per event
 -  Alerts for each one of the participants in the event.
+-  Custom Alerts: sms, mail, or phone call.
