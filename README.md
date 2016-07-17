@@ -1,11 +1,10 @@
 # Event Reminders
 
 In order to learn better Phoenix, I will create an application that will remind
-someone about his role in a near event.
+someone about his role in a near event. I will following [Programming Phoenix](https://pragprog.com/book/phoenix/programming-phoenix).
 
 This application is intended to help in organizing events that
 require participation of several persons.
-
 
 ## Features
 -  Register of an organization
