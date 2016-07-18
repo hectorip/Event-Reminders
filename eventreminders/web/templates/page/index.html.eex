@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h2>Event Reminders</h2>
-  <%# <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2> %>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <p>Register your events</p>
+
 </div>
 
 <div class="row marketing">
