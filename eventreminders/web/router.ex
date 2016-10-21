@@ -26,6 +26,7 @@ defmodule Boilerplate.Router do
   scope "/admin", Boilerplate do
     pipe_through [:browser, :authenticate_user]
     resources "/users", UserController
+    resources "/events", EventController
   end
   # Other scopes may use custom stacks.
   # scope "/api", Boilerplate do
